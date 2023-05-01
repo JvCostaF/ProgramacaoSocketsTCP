@@ -41,7 +41,7 @@ public class TCPServer {
                 String englishWord = dictionary.get(capitalizedSentence);
                 outToClient.writeBytes(englishWord+"\n");
             } else {
-                outToClient.writeBytes("Palavra não encontrada");
+                outToClient.writeBytes("Palavra nao encontrada"+"\n");
                 System.out.println("Palavra não encontrada");
             }
         }
