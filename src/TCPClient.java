@@ -15,6 +15,7 @@ public class TCPClient {
 
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
+        System.out.println("Digite uma palavra em português:");
         sentence = inFromUser.readLine();
 
         outToServer.writeBytes(sentence + '\n');
